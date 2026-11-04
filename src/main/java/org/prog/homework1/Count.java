@@ -1,17 +1,24 @@
-package homework1;
+package org. prog.homework1;
 
 public class Count {
 
     public static void main(String[] args) {
 
-
+           int sum = 0;
 
 for (int i = 0; i < 100; i++) {
-    int j = 3;
-    for (int a = 0; (i & j) == 0; a++)
+
+     if( (i % 3) == 0 && (i % 7) == 0 && (i % 13) == 0){
+      sum ++;
 
 
-        System.out.println(a++);
 
 
-}}}
+
+
+
+}
+}System.out.println(sum);
+
+    }
+}
