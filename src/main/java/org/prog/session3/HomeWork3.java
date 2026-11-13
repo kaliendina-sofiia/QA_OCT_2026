@@ -26,6 +26,10 @@ public class HomeWork3 {
                 "ann@site.org",
                 "@mail.com",
                 "first.last@my-server.com"
-        };
+
+
+
+
+};
     }
 }
