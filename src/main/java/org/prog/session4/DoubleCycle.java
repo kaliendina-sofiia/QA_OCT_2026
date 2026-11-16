@@ -10,19 +10,19 @@ public class DoubleCycle {
 //            System.out.println("i = " + i);
 //        }
 
-        for (int i = 0; i < 10; i++) {
-            if (i == 3 || i == 8) {
-                continue;
-            }
-            System.out.println("i = " + i);
-        }
+//        for (int i = 0; i < 10; i++) {
+//            if (i == 3 || i == 8) {
+//                continue;
+//            }
+//            System.out.println("i = " + i);
+//        }
 
 //
 //
-//        for (int i = 0; i < 10; i++) {
-//            for (int j = 0; j < 10; j++) {
-//                System.out.println("i " + i + " : j " + j);
-//            }
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                System.out.println("i " + i + " : j " + j);
+            }}
 //        }
 //        boolean isSorted = true;
 //        while (isSorted) {

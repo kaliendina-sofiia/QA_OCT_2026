@@ -8,41 +8,34 @@ public class Bubble {
 //        Random random = new Random();
 //        for (int i = 0; i < ints.length; i++) {
 //            ints[i] = random.nextInt(1000);
-//        }
-        int[] ints = new int[5];
-        ints[0] = 5;
-        ints[1] = 4;
-        ints[2] = 3;
-        ints[3] = 2;
-        ints[4] = 1;
+        //      }
+        int[] index = new int[5];
+        index[0] = 5;
+        index[1] = 4;
+        index[2] = 3;
+        index[3] = 2;
+        index[4] = 1;
 
-        for (int i = 0; i < ints.length-1 ; i++) {
-                if (i == ints.length-1 ) {
-                    i++;}
-                if (i == 1){
-                    i++;
-                }
+        for(int j=0;  j < index.length - 1; j++ ){
+            boolean stopped = false;
+        for (int i = index.length - 1; i<j ; i++ ) {
 
-
-            boolean isSorted = true;
-        while (!isSorted) {
-            isSorted = false;
-            for ( i = 1; i < ints.length -1; i++) {
-
-                if (ints[i] < ints[i - 1]) {
-                    int Value1 = ints[i];
-                    int Value2 = ints[i - 1];
-                    ints[i] = Value2;
-                    ints[i - 1] = Value1;
-                }
-                }
-                       isSorted = false;
-
-       }
-
-            System.out.println(ints[i]);
-
+            if (index[i-1] > index[i]) {
+                int previousNumber = index[i - 1];
+                int number = index[i];
+                index[i - 1] = number;
+                index[i] = previousNumber;
+                stopped = true;
             }
+                    if ( stopped == false ) {
+                        break;
+
+
+                    }
+                 System.out.println(index[i]);}}
+      //      System.out.println(i + " " + index[i]);
+
+
     }}
 
 
