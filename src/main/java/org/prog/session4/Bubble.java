@@ -16,23 +16,23 @@ public class Bubble {
         index[3] = 2;
         index[4] = 1;
 
-        for(int j=0;  j < index.length - 1; j++ ){
-            boolean stopped = false;
-        for (int i = index.length - 1; i<j ; i++ ) {
 
-            if (index[i-1] > index[i]) {
+            boolean stopped = true;
+            while (stopped) {
+                stopped = true;
+        for (int i = 0; i < index.length -1 ; i++ ) {
+
+            if (index[i - 1] > index[i]) {
                 int previousNumber = index[i - 1];
                 int number = index[i];
                 index[i - 1] = number;
                 index[i] = previousNumber;
-                stopped = true;
-            }
-                    if ( stopped == false ) {
-                        break;
+                stopped = false;
 
 
-                    }
-                 System.out.println(index[i]);}}
+        }}}
+
+                 System.out.println(index[i]);
       //      System.out.println(i + " " + index[i]);
 
 
