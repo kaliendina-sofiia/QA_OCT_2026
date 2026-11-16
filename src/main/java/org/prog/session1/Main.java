@@ -9,7 +9,7 @@ public class Main {
 //        System.out.println(1 - 1);
 //        System.out.println(10 * 10);
 //        System.out.println(20 / 5);
-//        System.out.println(10 % 2);
+//      System.out.println(10 % 2);
 
 //        boolean b1 = true;
 //        boolean b2 = false;
