@@ -7,6 +7,7 @@ package org.prog.session3;
 // - after @ must be at least 1 dot (.)
 // - dot may neve be first or last symbol
 
+
 public class HomeWork3 {
 
     public static void main(String[] args) {
@@ -25,7 +26,22 @@ public class HomeWork3 {
                 "tom@mail.com.",
                 "ann@site.org",
                 "@mail.com",
-                "first.last@my-server.com"
-        };
-    }
-}
+                "first.last@my-server.com" };
+
+
+
+        for (int i = 0; i < emails.length; i++) {
+            if (
+            (!emails[i].startsWith(".") &&
+                    ( !emails[i].endsWith(".")) &&
+                    (emails[i].contains("@")) &&
+                            (emails[i].indexOf("@") == emails[i].lastIndexOf("@") )&&
+                    (emails[i].lastIndexOf("@") < emails[i]. lastIndexOf(".") &&
+                            (emails[i].indexOf("@") >= 3 ) &&
+                            (emails[i].lastIndexOf("@") >= 5))))
+            {
+                System.out.println(emails[i]);
+            }
+
+
+}}}
