@@ -20,23 +20,27 @@ public class Bubble {
             boolean stopped = true;
             while (stopped) {
                 stopped = true;
-        for (int i = 0; i < index.length -1 ; i++ ) {
+        for (int i = 0; i < index.length - 1 ; i++ ) {
 
-            if (index[i - 1] > index[i]) {
-                int previousNumber = index[i - 1];
+            if (index[i + 1] < index[i]) {
+                int previousNumber = index[i + 1];
                 int number = index[i];
-                index[i - 1] = number;
-                index[i] = previousNumber;
+                  index[i]= number;
+              index[i] = previousNumber;
                 stopped = false;
 
-
-        }}}
-
-                 System.out.println(index[i]);
-      //      System.out.println(i + " " + index[i]);
+            }
 
 
-    }}
+//                 System.out.println(index[i]);
+        System.out.println(i + " " + index[i]);
+         for ( int k = 0; k < index.length; k++ ) {
+
+                System.out.println(k + " " + index[i]);
+            }
+         }
+
+    }}}
 
 
 

@@ -1,10 +1,19 @@
 package org.prog.session4;
 
-public class Plane {
+   public class Plane{
 
+     Plane Plane = new Plane();
     public String maxPassengersSeats;
     public String maxTakenSeats;
     public String flightId;
+
+
+
+    public Plane() {
+
+    }
+
+
     public static int countFreeSeats(int maxPassengersSeats, int maxTakenSeats) {
         return ((maxTakenSeats * 100) / maxPassengersSeats);}
 
