@@ -17,14 +17,12 @@ public class Main {
         apple.color = "red";
         apple2.color = "red";
         andr.model = "andr1";
-        andr2.model = "andr1";
-        apple.model = " apple1 ";
-        apple2.model = " apple2 ";
+        andr2.model = "andr2";
+        apple.model = "apple2";
+        apple2.model = "apple2";
 
-        System.out.println(andr.color.equals(andr2.color));
-        System.out.println(andr2.model.equals(andr2.model));
-        System.out.println(apple.color.equals(andr2.color));
-        System.out.println(apple2.model.equals(andr2.model));
+        System.out.println(andr.equals(andr2));
+        System.out.println(apple.equals(apple2));
 
     }
 

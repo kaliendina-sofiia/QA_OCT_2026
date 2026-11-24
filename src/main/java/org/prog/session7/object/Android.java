@@ -1,5 +1,7 @@
 package org.prog.session7.object;
 
+import java.util.Objects;
+
 public class Android implements IPhone {
     public String color;
     public String model;
@@ -22,9 +24,14 @@ public class Android implements IPhone {
             Android andr = (Android) o;
             andr.color.equals(this.color);
             andr.model.equals(this.model);
+           return andr.color.equals(this.color) && andr.model.equals(this.model);
         }
-        return false;
+          return false;
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(color, model);
     }
 
 }

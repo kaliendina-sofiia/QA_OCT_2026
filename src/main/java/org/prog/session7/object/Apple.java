@@ -1,5 +1,7 @@
 package org.prog.session7.object;
 
+import java.util.Objects;
+
 public class Apple implements IPhone {
 
     public String color;
@@ -14,7 +16,6 @@ public class Apple implements IPhone {
     @Override
     public void unlock() {
         System.out.println("Apple unlock");
-
     }
 
     @Override
@@ -23,8 +24,13 @@ public class Apple implements IPhone {
             Apple apple = (Apple) o;
             apple.color.equals(this.color);
             apple.model.equals(this.model);
+            return apple.color.equals(this.color) && apple.model.equals(this.model);
         }
         return false;
 
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(color, model);
     }
 }
